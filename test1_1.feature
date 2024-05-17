@@ -1,7 +1,5 @@
-Feature: Error in login process
+Feature: login process
 
-  #Create a simple logging function that writes messages to a text file with a timestamp.
-  
   @Testone
   Scenario: Error on empty fields
     When I click on 'enter'
@@ -24,9 +22,6 @@ Feature: Error in login process
 
   @Testfour
   Scenario: Login successfully
-    Given I have users:
-      | name           | email             | password |
-      | Vitor Batista  | vitor@keepfy.com  | abcdef   |
     When I type 'ric@devpro.com' in 'email'
     And I type 'abcdef' in 'password'
     And I click on 'enter'
